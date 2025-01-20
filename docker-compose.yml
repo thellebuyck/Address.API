@@ -1,0 +1,6 @@
+services:
+  address.api:
+    image: ${DOCKER_REGISTRY-}addressapi
+    build:
+      context: .
+      dockerfile: src/Dockerfile
