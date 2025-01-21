@@ -25,9 +25,11 @@ namespace Address.API.Controllers.v1
 
         // GET api/<AddressesController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<IActionResult> Get(Guid id)
         {
-            return "value";
+            var query = new GetAddressByIdQuery { Id = id };
+            var response = await Mediator.Send(query);    
+            return Ok(response);
         }
 
         // POST api/<AddressesController>
