@@ -19,7 +19,6 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.InstanceName = "SampleInstance";
 });
 
-builder.Services.AddScoped<IRedisService, RedisService>();
 
 #endregion
 

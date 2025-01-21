@@ -5,6 +5,9 @@ namespace Address.API.Application.Data.Contexts
 {
     public class ApplicationDbContext : DbContext
     {
+        public ApplicationDbContext(DbContextOptions options) : base(options)
+        {
+        }
 
         public DbSet<AddressEntity> Addresses {  get; set; }    
 

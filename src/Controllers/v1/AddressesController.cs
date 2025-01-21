@@ -16,19 +16,12 @@ namespace Address.API.Controllers.v1
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var query = new TestQuery();
+            var query = new GetAllAddressesQuery();
             var response = await Mediator.Send(query);
 
             return Ok(response);
         }
 
-        [HttpPost("validate")]
-        public async Task<IActionResult> Validate(AddressView addressView)
-        {
-            var command = new ValidateAddressCommand { UserInput = addressView };
-            var response = await Mediator.Send(command);
-            return Ok(response);
-        }
 
         // GET api/<AddressesController>/5
         [HttpGet("{id}")]
@@ -39,8 +32,15 @@ namespace Address.API.Controllers.v1
 
         // POST api/<AddressesController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Post([FromBody] AddAddressCommand command)
         {
+            if (command == null)
+            {
+                return UnprocessableEntity("Unable to process this request");
+            }
+            var response = await Mediator.Send(command);
+
+            return Ok(response);
         }
 
         // PUT api/<AddressesController>/5
