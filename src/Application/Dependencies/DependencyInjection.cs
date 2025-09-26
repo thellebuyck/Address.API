@@ -1,11 +1,11 @@
 ﻿using System.Reflection;
-using Address.API.Application.Common.Behaviors;
-using Address.API.Application.Data.Contexts;
+using Addresses.API.Application.Common.Behaviors;
+using Addresses.API.Application.Data.Contexts;
 using FluentValidation; 
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Address.API.Application.Dependencies
+namespace Addresses.API.Application.Dependencies
 {
     public static class DependencyInjection
     {
@@ -27,7 +27,7 @@ namespace Address.API.Application.Dependencies
         {
             services.AddDbContext<ApplicationDbContext>(options =>
             {
-                options.UseInMemoryDatabase("AddressDb");
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
             });
 
             return services;

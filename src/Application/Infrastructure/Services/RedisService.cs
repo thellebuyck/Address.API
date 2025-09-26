@@ -1,4 +1,4 @@
-﻿namespace Address.API.Application.Infrastructure.Services
+﻿namespace Addresses.API.Application.Infrastructure.Services
 {
     public class RedisService
     {

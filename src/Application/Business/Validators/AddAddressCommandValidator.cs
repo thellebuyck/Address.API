@@ -1,7 +1,7 @@
-﻿using Address.API.Application.Business.Commands;
+﻿using Addresses.API.Application.Business.Commands;
 using FluentValidation;
 
-namespace Address.API.Application.Business.Validators
+namespace Addresses.API.Application.Business.Validators
 {
     public class AddAddressCommandValidator:AbstractValidator<AddAddressCommand>
     {

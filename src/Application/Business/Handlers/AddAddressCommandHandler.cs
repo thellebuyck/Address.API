@@ -1,16 +1,16 @@
-﻿using Address.API.Application.Business.Commands;
-using Address.API.Application.Data.Contexts;
-using AddressEnitty = Address.API.Application.Data.Entities.Address;
+﻿using Addresses.API.Application.Business.Commands;
+using Addresses.API.Application.Data.Contexts;
+using Addresses.API.Application.Data.Entities;
 using MediatR;
 
-namespace Address.API.Application.Business.Handlers
+namespace Addresses.API.Application.Business.Handlers
 {
     public class AddAddressCommandHandler(ApplicationDbContext applicationDbContext) : IRequestHandler<AddAddressCommand, Guid>
     {
         private readonly ApplicationDbContext applicationDbContext = applicationDbContext;
         public async Task<Guid> Handle(AddAddressCommand request, CancellationToken cancellationToken)
         {
-            var newAddress = new AddressEnitty
+            var newAddress = new Address()
             {
                 Id = Guid.NewGuid(),
                 City = request.City,

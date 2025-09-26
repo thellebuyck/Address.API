@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using System.Reflection;
 
-namespace Address.API.Application.Mappings
+namespace Addresses.API.Application.Mappings
 {
     public class MappingProfile : Profile
     {

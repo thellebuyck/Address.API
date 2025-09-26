@@ -1,7 +1,8 @@
-﻿using AddressEntity =  Address.API.Application.Data.Entities.Address;
+﻿
+using Addresses.API.Application.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Address.API.Application.Data.Contexts
+namespace Addresses.API.Application.Data.Contexts
 {
     public class ApplicationDbContext : DbContext
     {
@@ -9,7 +10,8 @@ namespace Address.API.Application.Data.Contexts
         {
         }
 
-        public DbSet<AddressEntity> Addresses {  get; set; }    
+        public DbSet<Address> Addresses {  get; set; }    
+        public DbSet<StateCode> StateCodes { get; set; }
 
     }
 }

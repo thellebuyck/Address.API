@@ -1,8 +1,8 @@
-﻿using Address.API.Application.Common.Exceptions;
+﻿using Addresses.API.Application.Common.Exceptions;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Address.API.Middleware
+namespace Addresses.API.Middleware
 {
     public class ExceptionHandlerMiddleware
     {

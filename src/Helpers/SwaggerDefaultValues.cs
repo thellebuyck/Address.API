@@ -3,7 +3,7 @@ using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Address.API.Helpers
+namespace Addresses.API.Helpers
 {
     public class SwaggerDefaultValues : IOperationFilter
     {

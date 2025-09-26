@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using System.Diagnostics;
 
-namespace Address.API.Application.Common.Behaviors
+namespace Addresses.API.Application.Common.Behaviors
 {
     internal class PerformanceBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
     {

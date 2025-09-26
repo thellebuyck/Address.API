@@ -1,6 +1,6 @@
-using Address.API.Application.Dependencies;
-using Address.API.Application.Infrastructure.Services;
-using Address.API.Helpers;
+using Addresses.API.Application.Dependencies;
+using Addresses.API.Application.Infrastructure.Services;
+using Addresses.API.Helpers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Options;
@@ -8,8 +8,8 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.StackExchangeRedis;
-using Address.API.Application.Infrastructure.Interfaces;
-using Address.API.Middleware;
+using Addresses.API.Application.Infrastructure.Interfaces;
+using Addresses.API.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 

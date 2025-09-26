@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Address.API.Application.Business.Commands
+namespace Addresses.API.Application.Business.Commands
 {
     public class AddAddressCommand:IRequest<Guid>
     {

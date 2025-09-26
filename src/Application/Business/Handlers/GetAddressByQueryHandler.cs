@@ -1,12 +1,14 @@
-﻿using Address.API.Application.Business.Commands;
-using Address.API.Application.Business.Queries;
-using Address.API.Application.Business.Views;
-using Address.API.Application.Common.Exceptions;
-using Address.API.Application.Data.Contexts;
+﻿using Addresses.API.Application.Business.Commands;
+using Addresses.API.Application.Business.Queries;
+using Addresses.API.Application.Business.Views;
+using Addresses.API.Application.Common.Exceptions;
+using Addresses.API.Application.Data.Contexts;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Addresses.API.Application.Data.Entities;
 
-namespace Address.API.Application.Business.Handlers
+
+namespace Addresses.API.Application.Business.Handlers
 {
     public class GetAddressByQueryHandler(ApplicationDbContext context) : IRequestHandler<GetAddressByIdQuery, AddressView>
     {

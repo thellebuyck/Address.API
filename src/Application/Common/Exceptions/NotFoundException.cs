@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Address.API.Application.Common.Exceptions
+namespace Addresses.API.Application.Common.Exceptions
 {
     public class NotFoundException : Exception
     {

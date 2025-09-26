@@ -1,10 +1,10 @@
-﻿using Address.API.Application.Business.Queries;
-using Address.API.Application.Business.Views;
-using Address.API.Application.Data.Contexts;
+﻿using Addresses.API.Application.Business.Queries;
+using Addresses.API.Application.Business.Views;
+using Addresses.API.Application.Data.Contexts;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Address.API.Application.Business.Handlers
+namespace Addresses.API.Application.Business.Handlers
 {
     public class GetAllAddressesQueryHandler(ApplicationDbContext applicationDbContext) : IRequestHandler<GetAllAddressesQuery, List<AddressView>>
     {

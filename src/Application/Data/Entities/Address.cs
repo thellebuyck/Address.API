@@ -1,4 +1,4 @@
-﻿namespace Address.API.Application.Data.Entities
+﻿namespace Addresses.API.Application.Data.Entities
 {
     public class Address
     {
@@ -9,6 +9,10 @@
         public string? City { get; set; }
         public string? ZipCode { get; set; }
         public string? CountryCode { get; set; }
-        
+
+
+
+        //Navigation property   
+        public StateCode? StateCode { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Address.API.Application.Infrastructure.Interfaces
+﻿namespace Addresses.API.Application.Infrastructure.Interfaces
 {
     public interface IRedisService
     {

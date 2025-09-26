@@ -1,7 +1,7 @@
-﻿using Address.API.Application.Business.Views;
+﻿using Addresses.API.Application.Business.Views;
 using MediatR;
 
-namespace Address.API.Application.Business.Queries
+namespace Addresses.API.Application.Business.Queries
 {
     public class GetAllAddressesQuery : IRequest<List<AddressView>>
     {

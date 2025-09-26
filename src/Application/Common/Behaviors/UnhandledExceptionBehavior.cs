@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Address.API.Application.Common.Behaviors
+namespace Addresses.API.Application.Common.Behaviors
 {
     internal class UnhandledExceptionBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
         where TRequest : IRequest<TResponse>

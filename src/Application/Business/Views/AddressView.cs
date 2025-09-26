@@ -1,7 +1,7 @@
-﻿using Address.API.Application.Mappings;
-using AddressEntity = Address.API.Application.Data.Entities.Address;
+﻿using Addresses.API.Application.Mappings;
+using AddressEntity = Addresses.API.Application.Data.Entities.Address;
 
-namespace Address.API.Application.Business.Views
+namespace Addresses.API.Application.Business.Views
 {
     public class AddressView : IMapFrom<AddressEntity>
     {

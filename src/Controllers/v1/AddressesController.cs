@@ -1,11 +1,11 @@
-﻿using Address.API.Application.Business.Commands;
-using Address.API.Application.Business.Queries;
-using Address.API.Application.Business.Views;
+﻿using Addresses.API.Application.Business.Commands;
+using Addresses.API.Application.Business.Queries;
+using Addresses.API.Application.Business.Views;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Address.API.Controllers.v1
+namespace Addresses.API.Controllers.v1
 {
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
