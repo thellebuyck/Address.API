@@ -21,7 +21,7 @@ namespace Addresses.API.Application.Business.Handlers
                     City = address.City,
                     StateCodeId = address.StateCodeId,
                     StreetName = address.StreetName,
-                    CountryCode = address.CountryCode,
+                  
                     Id = address.Id,
                     PostalCode = address.ZipCode
                 });

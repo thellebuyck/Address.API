@@ -28,7 +28,6 @@ namespace Addresses.API.Application.Business.Handlers
                 StreetName = existingAddress.StreetName,
                 City = existingAddress.City,
                 StateCodeId = existingAddress.StateCodeId,
-                CountryCode = existingAddress.CountryCode,
                 PostalCode = existingAddress.ZipCode
             };
         }

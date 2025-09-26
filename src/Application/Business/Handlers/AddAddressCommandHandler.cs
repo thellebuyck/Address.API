@@ -18,7 +18,7 @@ namespace Addresses.API.Application.Business.Handlers
                 StreetName = request.StreetName,
                 StreetNameExt = request.StreetNameExt,
                 ZipCode = request.PostalCode,
-                CountryCode = request.Country
+
             };
 
             this.applicationDbContext.Addresses.Add(newAddress);
